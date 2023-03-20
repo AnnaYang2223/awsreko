@@ -236,8 +236,7 @@ def usage_demo():
     three_girls_url = 'https://dhei5unw3vrsx.cloudfront.net/images/target3_resized.jpg'
     swimwear_object = boto3.resource('s3').Object(
         'console-sample-images-pdx', 'yoga_swimwear.jpg')
-    book_file_name = "./media/1.jpg"
-
+    book_file_name = './media/1.jpg'
 
     street_scene_image = RekognitionImage.from_file(
         street_scene_file_name, rekognition_client)
